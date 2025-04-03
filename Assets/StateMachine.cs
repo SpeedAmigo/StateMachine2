@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StateMachine : MonoBehaviour
 {
-    private StateStack stack;
+    [SerializeField] private StateStack stack;
     public State CurrentState {  get; private set; }
     private State previousState;
 

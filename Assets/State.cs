@@ -1,11 +1,15 @@
+using System;
 using UnityEngine;
 
-public abstract class State
+[Serializable]
+public class State
 {
+    public string name;
     protected StateMachine stateMachine;
 
     public State(StateMachine machine)
     {
+        name = GetType().Name;
         stateMachine = machine;
     }
 

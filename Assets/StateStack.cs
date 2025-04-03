@@ -1,10 +1,12 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class StateStack
 {
-    private List<State> stack = new();
+    [SerializeField] private List<State> stack = new();
 
     public void Push(State state)
     {
